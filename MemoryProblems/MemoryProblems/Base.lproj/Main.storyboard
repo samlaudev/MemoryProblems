@@ -46,11 +46,32 @@
                     <connections>
                         <segue destination="Blh-wi-hx2" kind="show" identifier="ReferenceCycleViewControllerSegue" id="LQZ-oK-H7l"/>
                         <segue destination="A3w-CO-YOf" kind="show" identifier="NameListViewControllerSegue" id="mx9-NY-Eet"/>
+                        <segue destination="ajG-cW-FNb" kind="show" identifier="BlockLeakViewControllerSegue" id="159-rU-Xgs"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRQ-VX-ji5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="838" y="408"/>
+        </scene>
+        <!--Block内存泄露-->
+        <scene sceneID="b5T-vL-ZhP">
+            <objects>
+                <viewController id="ajG-cW-FNb" customClass="BlockLeakViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J0u-wV-Xvj"/>
+                        <viewControllerLayoutGuide type="bottom" id="TPA-k7-blf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hww-xe-XsF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Block内存泄露" id="pGF-we-1jh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qzv-uU-fS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1307" y="-271"/>
         </scene>
         <!--引用循环-->
         <scene sceneID="V70-x4-JaR">

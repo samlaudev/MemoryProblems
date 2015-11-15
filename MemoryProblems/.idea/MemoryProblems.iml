@@ -7,6 +7,8 @@
       <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Base.lproj/Main.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Controllers/BlockLeakViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Controllers/BlockLeakViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Controllers/NameListViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Controllers/NameListViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Controllers/ProblemsListViewController.h" isTestSource="false" />

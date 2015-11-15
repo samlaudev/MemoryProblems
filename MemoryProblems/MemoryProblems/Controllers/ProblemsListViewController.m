@@ -12,6 +12,7 @@
 static NSString *const kProblemCellIdentifier = @"ProblemCell";
 static NSString *const kReferenceCycleViewControllerSegue = @"ReferenceCycleViewControllerSegue";
 static NSString *const kNameListViewControllerSegue = @"NameListViewControllerSegue";
+static NSString *const kBlockLeakViewControllerSegue = @"BlockLeakViewControllerSegue";
 
 @interface ProblemsListViewController ()
 
@@ -33,7 +34,7 @@ static NSString *const kNameListViewControllerSegue = @"NameListViewControllerSe
 - (NSArray *)problemsList
 {
     if (!_problemsList) {
-        _problemsList = @[@"引用循环", @"悬挂指针"];
+        _problemsList = @[@"引用循环", @"悬挂指针", @"Block内存泄露"];
     }
     return _problemsList;
 }
@@ -57,6 +58,8 @@ static NSString *const kNameListViewControllerSegue = @"NameListViewControllerSe
         [self performSegueWithIdentifier:kReferenceCycleViewControllerSegue sender:self];
     }else if (indexPath.row == 1) {
         [self performSegueWithIdentifier:kNameListViewControllerSegue sender:self];
+    }else if(indexPath.row == 2) {
+        [self performSegueWithIdentifier:kBlockLeakViewControllerSegue sender:self];
     }
 }
 

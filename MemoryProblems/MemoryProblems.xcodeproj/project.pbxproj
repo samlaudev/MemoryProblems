@@ -15,6 +15,7 @@
 		1A316A351BF3420500E2E3E0 /* MemoryProblemsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A316A341BF3420500E2E3E0 /* MemoryProblemsTests.m */; };
 		8F8059141BF87E59009E9946 /* NameListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8059131BF87E59009E9946 /* NameListViewController.m */; };
 		8F8059171BF87FAD009E9946 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8059161BF87FAD009E9946 /* ArrayDataSource.m */; };
+		8F80591A1BF8CD93009E9946 /* BlockLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8059191BF8CD93009E9946 /* BlockLeakViewController.m */; };
 		DC02C46A2BB41F0770EB7123 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = DC02C3243B29339377041AA8 /* Test.m */; };
 		DC02C8637763D25D4FF50443 /* ReferenceCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC02CA9A5B5135CF84791C26 /* ReferenceCycleViewController.m */; };
 		DC02CAB19A20C5C5137247C4 /* ProblemsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC02C8287066AAE5EACD73D0 /* ProblemsListViewController.m */; };
@@ -46,6 +47,8 @@
 		8F8059131BF87E59009E9946 /* NameListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameListViewController.m; sourceTree = "<group>"; };
 		8F8059151BF87FAD009E9946 /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
 		8F8059161BF87FAD009E9946 /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
+		8F8059181BF8CD93009E9946 /* BlockLeakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockLeakViewController.h; sourceTree = "<group>"; };
+		8F8059191BF8CD93009E9946 /* BlockLeakViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockLeakViewController.m; sourceTree = "<group>"; };
 		DC02C132040229890017134E /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		DC02C3243B29339377041AA8 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		DC02C63D80DE0394CC8A6026 /* ProblemsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemsListViewController.h; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				DC02CA9A5B5135CF84791C26 /* ReferenceCycleViewController.m */,
 				8F8059121BF87E59009E9946 /* NameListViewController.h */,
 				8F8059131BF87E59009E9946 /* NameListViewController.m */,
+				8F8059181BF8CD93009E9946 /* BlockLeakViewController.h */,
+				8F8059191BF8CD93009E9946 /* BlockLeakViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				1A316A1F1BF3420500E2E3E0 /* AppDelegate.m in Sources */,
 				1A316A1C1BF3420500E2E3E0 /* main.m in Sources */,
 				8F8059171BF87FAD009E9946 /* ArrayDataSource.m in Sources */,
+				8F80591A1BF8CD93009E9946 /* BlockLeakViewController.m in Sources */,
 				DC02CAB19A20C5C5137247C4 /* ProblemsListViewController.m in Sources */,
 				8F8059141BF87E59009E9946 /* NameListViewController.m in Sources */,
 				DC02C8637763D25D4FF50443 /* ReferenceCycleViewController.m in Sources */,
