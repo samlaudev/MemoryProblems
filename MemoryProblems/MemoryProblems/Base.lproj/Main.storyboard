@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TBt-5o-yF7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TBt-5o-yF7">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--内存管理集合-->
@@ -12,10 +12,12 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="sWr-T4-Jto">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="NKB-Rk-Ttr">
                             <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="rect" keyPath="frame">
@@ -25,15 +27,14 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProblemCell" id="4ea-Xu-NOH">
-                                <rect key="frame" x="0.0" y="158" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="157.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4ea-Xu-NOH" id="7YA-vg-vbV">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Blh-wi-hx2" kind="push" identifier="ReferenceCycleViewControllerSegue" id="OdN-7r-gGV"/>
-                                </connections>
+                                <animations/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -42,6 +43,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="内存管理集合" id="EAM-i4-X1n"/>
+                    <connections>
+                        <segue destination="Blh-wi-hx2" kind="show" identifier="ReferenceCycleViewControllerSegue" id="LQZ-oK-H7l"/>
+                        <segue destination="A3w-CO-YOf" kind="show" identifier="NameListViewControllerSegue" id="mx9-NY-Eet"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRQ-VX-ji5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,13 +63,46 @@
                     <view key="view" contentMode="scaleToFill" id="Xng-Bg-ZZr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="引用循环" id="m91-GT-PGw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="93Q-EA-wzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295" y="408"/>
+            <point key="canvasLocation" x="1307" y="408"/>
+        </scene>
+        <!--悬挂指针-->
+        <scene sceneID="t6F-EJ-anJ">
+            <objects>
+                <tableViewController id="A3w-CO-YOf" customClass="NameListViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="S2A-Ad-h26">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NameCell" id="Wu8-Si-QbX">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wu8-Si-QbX" id="qIq-Ye-C3G">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="A3w-CO-YOf" id="Vj7-rb-czI"/>
+                            <outlet property="delegate" destination="A3w-CO-YOf" id="x2u-jr-EBd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="悬挂指针" id="9PP-Oz-NcI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kuV-Zw-8AK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1307" y="1153"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BTF-d6-W2E">
@@ -75,6 +113,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bRb-pD-2CU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

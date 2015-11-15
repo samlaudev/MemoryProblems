@@ -25,9 +25,4 @@
     test2.objc = test1;
 }
 
-- (void)dealloc
-{
-    NSLog(@"dealloc be call at ReferenceCycleViewController");
-}
-
 @end

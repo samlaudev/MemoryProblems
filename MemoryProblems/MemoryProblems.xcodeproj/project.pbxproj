@@ -13,6 +13,8 @@
 		1A316A271BF3420500E2E3E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A316A261BF3420500E2E3E0 /* Assets.xcassets */; };
 		1A316A2A1BF3420500E2E3E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A316A281BF3420500E2E3E0 /* LaunchScreen.storyboard */; };
 		1A316A351BF3420500E2E3E0 /* MemoryProblemsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A316A341BF3420500E2E3E0 /* MemoryProblemsTests.m */; };
+		8F8059141BF87E59009E9946 /* NameListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8059131BF87E59009E9946 /* NameListViewController.m */; };
+		8F8059171BF87FAD009E9946 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8059161BF87FAD009E9946 /* ArrayDataSource.m */; };
 		DC02C46A2BB41F0770EB7123 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = DC02C3243B29339377041AA8 /* Test.m */; };
 		DC02C8637763D25D4FF50443 /* ReferenceCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC02CA9A5B5135CF84791C26 /* ReferenceCycleViewController.m */; };
 		DC02CAB19A20C5C5137247C4 /* ProblemsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC02C8287066AAE5EACD73D0 /* ProblemsListViewController.m */; };
@@ -40,6 +42,10 @@
 		1A316A301BF3420500E2E3E0 /* MemoryProblemsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryProblemsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A316A341BF3420500E2E3E0 /* MemoryProblemsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryProblemsTests.m; sourceTree = "<group>"; };
 		1A316A361BF3420500E2E3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F8059121BF87E59009E9946 /* NameListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameListViewController.h; sourceTree = "<group>"; };
+		8F8059131BF87E59009E9946 /* NameListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameListViewController.m; sourceTree = "<group>"; };
+		8F8059151BF87FAD009E9946 /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
+		8F8059161BF87FAD009E9946 /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
 		DC02C132040229890017134E /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		DC02C3243B29339377041AA8 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		DC02C63D80DE0394CC8A6026 /* ProblemsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemsListViewController.h; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 				1A316A1A1BF3420500E2E3E0 /* Supporting Files */,
 				DC02CA4D9823E542CD014427 /* Controllers */,
 				DC02C29AFE0BE97CB977930F /* Model */,
+				C9C76DDCCEACB5DAC236AEA6 /* DataSource */,
 			);
 			path = MemoryProblems;
 			sourceTree = "<group>";
@@ -117,6 +124,15 @@
 			path = MemoryProblemsTests;
 			sourceTree = "<group>";
 		};
+		C9C76DDCCEACB5DAC236AEA6 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8F8059151BF87FAD009E9946 /* ArrayDataSource.h */,
+				8F8059161BF87FAD009E9946 /* ArrayDataSource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		DC02C29AFE0BE97CB977930F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +149,8 @@
 				DC02C63D80DE0394CC8A6026 /* ProblemsListViewController.h */,
 				DC02CEDCBB5D8325D8D7C744 /* ReferenceCycleViewController.h */,
 				DC02CA9A5B5135CF84791C26 /* ReferenceCycleViewController.m */,
+				8F8059121BF87E59009E9946 /* NameListViewController.h */,
+				8F8059131BF87E59009E9946 /* NameListViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -239,7 +257,9 @@
 			files = (
 				1A316A1F1BF3420500E2E3E0 /* AppDelegate.m in Sources */,
 				1A316A1C1BF3420500E2E3E0 /* main.m in Sources */,
+				8F8059171BF87FAD009E9946 /* ArrayDataSource.m in Sources */,
 				DC02CAB19A20C5C5137247C4 /* ProblemsListViewController.m in Sources */,
+				8F8059141BF87E59009E9946 /* NameListViewController.m in Sources */,
 				DC02C8637763D25D4FF50443 /* ReferenceCycleViewController.m in Sources */,
 				DC02C46A2BB41F0770EB7123 /* Test.m in Sources */,
 			);
@@ -428,6 +448,7 @@
 				1A316A3B1BF3420500E2E3E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A316A3C1BF3420500E2E3E0 /* Build configuration list for PBXNativeTarget "MemoryProblemsTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +457,7 @@
 				1A316A3E1BF3420500E2E3E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

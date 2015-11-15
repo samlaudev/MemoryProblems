@@ -10,6 +10,8 @@
 #import "ReferenceCycleViewController.h"
 
 static NSString *const kProblemCellIdentifier = @"ProblemCell";
+static NSString *const kReferenceCycleViewControllerSegue = @"ReferenceCycleViewControllerSegue";
+static NSString *const kNameListViewControllerSegue = @"NameListViewControllerSegue";
 
 @interface ProblemsListViewController ()
 
@@ -31,7 +33,7 @@ static NSString *const kProblemCellIdentifier = @"ProblemCell";
 - (NSArray *)problemsList
 {
     if (!_problemsList) {
-        _problemsList = @[@"引用循环"];
+        _problemsList = @[@"引用循环", @"悬挂指针"];
     }
     return _problemsList;
 }
@@ -48,6 +50,14 @@ static NSString *const kProblemCellIdentifier = @"ProblemCell";
     return cell;
 }
 
-
+#pragma mark - Table view delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        [self performSegueWithIdentifier:kReferenceCycleViewControllerSegue sender:self];
+    }else if (indexPath.row == 1) {
+        [self performSegueWithIdentifier:kNameListViewControllerSegue sender:self];
+    }
+}
 
 @end
