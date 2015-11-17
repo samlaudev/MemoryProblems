@@ -17,6 +17,7 @@
 		8F8059171BF87FAD009E9946 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8059161BF87FAD009E9946 /* ArrayDataSource.m */; };
 		8F80591A1BF8CD93009E9946 /* BlockLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8059191BF8CD93009E9946 /* BlockLeakViewController.m */; };
 		DC02C46A2BB41F0770EB7123 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = DC02C3243B29339377041AA8 /* Test.m */; };
+		DC02C63364FD078EE8CDE175 /* StaticAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC02C66EBF0B01C0C74636C1 /* StaticAnalysisViewController.m */; };
 		DC02C8637763D25D4FF50443 /* ReferenceCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC02CA9A5B5135CF84791C26 /* ReferenceCycleViewController.m */; };
 		DC02CAB19A20C5C5137247C4 /* ProblemsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC02C8287066AAE5EACD73D0 /* ProblemsListViewController.m */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,8 @@
 		DC02C132040229890017134E /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		DC02C3243B29339377041AA8 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		DC02C63D80DE0394CC8A6026 /* ProblemsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemsListViewController.h; sourceTree = "<group>"; };
+		DC02C66EBF0B01C0C74636C1 /* StaticAnalysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticAnalysisViewController.m; sourceTree = "<group>"; };
+		DC02C73B458C32028E9736FC /* StaticAnalysisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticAnalysisViewController.h; sourceTree = "<group>"; };
 		DC02C8287066AAE5EACD73D0 /* ProblemsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemsListViewController.m; sourceTree = "<group>"; };
 		DC02CA9A5B5135CF84791C26 /* ReferenceCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferenceCycleViewController.m; sourceTree = "<group>"; };
 		DC02CEDCBB5D8325D8D7C744 /* ReferenceCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenceCycleViewController.h; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				8F8059131BF87E59009E9946 /* NameListViewController.m */,
 				8F8059181BF8CD93009E9946 /* BlockLeakViewController.h */,
 				8F8059191BF8CD93009E9946 /* BlockLeakViewController.m */,
+				DC02C73B458C32028E9736FC /* StaticAnalysisViewController.h */,
+				DC02C66EBF0B01C0C74636C1 /* StaticAnalysisViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				8F8059141BF87E59009E9946 /* NameListViewController.m in Sources */,
 				DC02C8637763D25D4FF50443 /* ReferenceCycleViewController.m in Sources */,
 				DC02C46A2BB41F0770EB7123 /* Test.m in Sources */,
+				DC02C63364FD078EE8CDE175 /* StaticAnalysisViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +403,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samlaudev.MemoryProblems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 			};
 			name = Debug;
 		};
@@ -408,6 +415,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samlaudev.MemoryProblems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 			};
 			name = Release;
 		};

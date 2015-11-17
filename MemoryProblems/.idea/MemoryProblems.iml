@@ -15,6 +15,8 @@
       <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Controllers/ProblemsListViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Controllers/ReferenceCycleViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Controllers/ReferenceCycleViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Controllers/StaticAnalysisViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Controllers/StaticAnalysisViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/DataSource/ArrayDataSource.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/DataSource/ArrayDataSource.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MemoryProblems/Info.plist" isTestSource="false" />
