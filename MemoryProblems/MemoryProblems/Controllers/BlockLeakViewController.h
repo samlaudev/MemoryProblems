@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BlockLeakViewController : UIViewController
+@interface BlockLeakViewController : UITableViewController
 
 
 @end
